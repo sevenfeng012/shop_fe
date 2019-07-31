@@ -1,0 +1,28 @@
+@import "@styles/theme.scss";
+
+.home-banner {
+  margin: -30px 0 -40px;
+  height: 410px;
+  background: #ffffff;
+  overflow: hidden;
+
+  @include eject(height, 340px);
+  @include eject(margin, 0);
+}
+
+.home-banner__swiper {
+  height: 340px;
+
+  &-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &-img {
+      width: 690px;
+      height: 340px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}
